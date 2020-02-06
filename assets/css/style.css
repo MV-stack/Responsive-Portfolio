@@ -150,15 +150,20 @@ body {
   padding: 10px;
 }
 
-/* Responsive layout - makes a two column-layout instead of five columns */
-@media screen and (max-width: 900px) {
+/* Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px`.*/
+
+
+@media screen and (max-width: 980px) {
   .column {
     width: 50%;
   }
 }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width:768px) {
+  .column {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 640px) {
   .column {
     width: 100%;
   }
