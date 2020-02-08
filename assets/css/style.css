@@ -1,7 +1,7 @@
 #masthead {
     position: fixed;
     z-index: 99;
-    width: 98%;
+    width: 100%;
     margin: 0 0 30px;
     overflow: auto;
     color: #ffffff;
@@ -50,6 +50,7 @@ img {
 /* main */
 #main-container {
     padding-top: 130px;
+    text-align:center;
     min-height: calc(100vh - 70px);
 }
 
@@ -61,6 +62,7 @@ img {
     margin: 0 0 40px;
     background: #ffffff;
     border: 1px solid #dddddd;
+    display: flex;
 }
 
 footer {
@@ -101,7 +103,9 @@ input[type=submit]:hover {
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  width:100%;
+  max-width: 960px;
+  /*padding: 20px;*/
 } 
 
 /* Portfolio */
@@ -111,7 +115,7 @@ input[type=submit]:hover {
 
 body {
   background-color: #f1f1f1;
-  padding: 20px;
+  /*padding: 20px;*/
   font-family: Arial;
 }
 
@@ -150,21 +154,31 @@ body {
   padding: 10px;
 }
 
-/* Use three `@media screen` tags, each with one of these `max-width`s: `980px`, `768px` and `640px`.*/
-
-
+/* Responsive layout */
 @media screen and (max-width: 980px) {
-  .column {
-    width: 50%;
-  }
-}
-@media screen and (max-width:768px) {
-  .column {
-    width: 75%;
-  }
-}
-@media screen and (max-width: 640px) {
-  .column {
+  .body {
     width: 100%;
   }
+}
+nav {
+  margin-right: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .body {
+    width: 100%;
+  }
+}
+nav {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 640px) {
+  .body {
+    width: 100%;
+  }
+}
+nav {
+  margin-right: 5px;  /* Container & Main-container */
 }
